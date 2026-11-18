@@ -20,7 +20,7 @@ export type FeatureNote = {
 	seed?: string
 	/** A control CLI command that reaches it. */
 	reach: string
-	/** Changes here always need Kent (see .agents/skills/ship-pr). */
+	/** Changes here always need the owner (see .agents/skills/ship-pr). */
 	high?: true
 }
 

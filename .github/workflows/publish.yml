@@ -147,7 +147,9 @@ jobs:
     name: 🚀 Publish
     runs-on: ubuntu-22.04
     needs: [validate, e2e, build]
-    if: ${{ github.event_name == 'push' }}
+    # Docker Hub publish is opt-in on this fork: set the PUBLISH_IMAGE repo
+    # variable to true once DOCKERHUB_USERNAME and DOCKERHUB_TOKEN exist.
+    if: ${{ github.event_name == 'push' && vars.PUBLISH_IMAGE == 'true' }}
     permissions:
       contents: read
       actions: write # type=gha cache export

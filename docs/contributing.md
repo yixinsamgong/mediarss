@@ -109,16 +109,16 @@ CommonJS-only packages need an ESM shim under `app/client/vendor/` marked as
 
 Agents file issues on GitHub with the forms in `.github/ISSUE_TEMPLATE/`
 (Friction, Cleanup). Every agent-filed issue gets exactly one priority label
-and, when it needs Kent's call, `needs-decision`:
+and, when it needs the owner's call, `needs-decision`:
 
-| Label            | Meaning                                               |
-| ---------------- | ----------------------------------------------------- |
-| `P0`             | Broken for users or blocking agents now; work it next |
-| `P1`             | Costs real time on most PRs; this week                |
-| `P2`             | Worth fixing; when nothing higher is open             |
-| `P3`             | Nice to have; batch it with nearby work               |
-| `needs-decision` | A product or one-way-door call for Kent; agents wait  |
+| Label            | Meaning                                                   |
+| ---------------- | --------------------------------------------------------- |
+| `P0`             | Broken for users or blocking agents now; work it next     |
+| `P1`             | Costs real time on most PRs; this week                    |
+| `P2`             | Worth fixing; when nothing higher is open                 |
+| `P3`             | Nice to have; batch it with nearby work                   |
+| `needs-decision` | A product or one-way-door call for the owner; agents wait |
 
 Agents work the highest priority first and leave `needs-decision` issues alone
-until Kent answers and removes the label. `friction-skipped` marks a friction
-issue the daily sweep looked at and left for a human.
+until the owner answers and removes the label. `friction-skipped` marks a
+friction issue the daily sweep looked at and left for a human.

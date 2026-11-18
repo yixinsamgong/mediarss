@@ -6,7 +6,7 @@ and tools/feature-notes.ts. Do not edit by hand; CI checks this through
 
 Every route in `app/routes.ts`, with how to seed and reach it from the
 control environment (`npm run --silent control -- dev`). Commands are
-`control-mediarss` subcommands. **High** routes always need Kent.
+`control-mediarss` subcommands. **High** routes always need the owner.
 
 ## Admin pages
 

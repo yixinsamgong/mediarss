@@ -76,7 +76,7 @@ export function renderFeatureMap(): string {
 		'',
 		'Every route in `app/routes.ts`, with how to seed and reach it from the',
 		'control environment (`npm run --silent control -- dev`). Commands are',
-		'`control-mediarss` subcommands. **High** routes always need Kent.',
+		'`control-mediarss` subcommands. **High** routes always need the owner.',
 		'',
 	]
 	for (const surface of surfaceOrder) {
