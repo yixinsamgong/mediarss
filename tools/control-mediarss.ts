@@ -551,7 +551,7 @@ async function map(args: Array<string>) {
 			.map((entry) =>
 				query
 					? [
-							`${entry.name}  ${entry.method === 'ANY' ? (entry.methods ?? 'ANY') : entry.method} ${entry.pattern}${entry.high ? '  (high: needs Kent)' : ''}`,
+							`${entry.name}  ${entry.method === 'ANY' ? (entry.methods ?? 'ANY') : entry.method} ${entry.pattern}${entry.high ? '  (high: needs the owner)' : ''}`,
 							`  what:  ${entry.summary}`,
 							entry.seed ? `  seed:  ${entry.seed}` : '',
 							`  reach: ${entry.reach}`,

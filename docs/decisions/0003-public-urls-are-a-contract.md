@@ -6,8 +6,8 @@ Status: accepted Date: 2026-10-23
 
 Do not change the shape of `/feed/:token`, `/media/:token/*path`, or
 `/art/:token/*path`, how tokens are generated or validated, or the GUIDs and
-enclosure URLs in RSS output, without Kent's approval. These routes are high
-risk in the ship loop.
+enclosure URLs in RSS output, without the owner's approval. These routes are
+high risk in the ship loop.
 
 ## Why
 
@@ -17,5 +17,5 @@ re-downloads every episode, and there is no way to notify subscribers.
 
 ## Revisit if
 
-Kent decides to migrate subscribers deliberately (for example, a versioned route
-that keeps the old one working).
+The owner decides to migrate subscribers deliberately (for example, a versioned
+route that keeps the old one working).

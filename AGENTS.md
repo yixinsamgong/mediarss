@@ -1,10 +1,13 @@
 # MediaRSS agent index
 
 MediaRSS turns folders of audio (and some video) into private RSS feeds for
-podcast apps. It is a self-hosted Docker app Kent runs on his NAS; feeds and
-media are public by token, and the admin UI sits behind Cloudflare Access.
-Node.js + npm, Remix 3 (`remix/component`, no React), SQLite via
-`remix/data-table`.
+podcast apps. It is a self-hosted Docker app; feeds and media are public by
+token, and the admin UI sits behind Cloudflare Access. This repo is
+yixinsamgong's fork of `kentcdodds/mediarss`: "the owner" in these docs is
+yixinsamgong, who makes every `needs-decision` and high-risk call. It runs
+locally for now; Docker Hub publish runs only when the `PUBLISH_IMAGE` repo
+variable is `true`. Node.js + npm, Remix 3 (`remix/component`, no React), SQLite
+via `remix/data-table`.
 
 `npm run validate` is the single local gate. Run `npm run check` to auto-fix
 format and lint before you finish. CI jobs, git hooks, and the data/test setup

@@ -11,10 +11,10 @@ once it has merged. Change the schema with a new
 
 ## Why
 
-Migrations run automatically at container start against Kent's only copy of the
-data. The runner journals applied migrations and refuses to start if an applied
-migration's files changed, so an edit takes the NAS app down. A `down.sql` keeps
-`npx remix db rollback` available for the
+Migrations run automatically at container start against the owner's only copy of
+the data. The runner journals applied migrations and refuses to start if an
+applied migration's files changed, so an edit takes the NAS app down. A
+`down.sql` keeps `npx remix db rollback` available for the
 [rollback runbook](../runbooks/rollback.md).
 
 ## Revisit if
